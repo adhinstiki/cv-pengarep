@@ -310,6 +310,200 @@ session_start();
     <!-- OUR PROJECT -->
     
     <!-- TAMBAHAN -->
+     <!--BENEFIT -->
+    <div class="container section-title" id="ourProject">
+        <h2>Why Choose Us</h2>
+        <h1>Why Choose CV Pengarep</h1>
+    </div>
+    <div class="container benefit-section" id="benefit">
+        <!-- Modern Design Section -->
+        <div class="section">
+            <div class="section-text-container">
+                <h2 class="section-title-text">Modern Design</h2>
+                <p class="section-description">Decoral is one of the most popular choices for those who want to explore the latest trends in interior design. Our modern design solutions help you create a space that is both functional and aesthetically pleasing.</p>
+            </div>
+            <div class="section-image">
+                <img src="assets/images/rui1.jpg" alt="Design Image 1">
+            </div>
+        </div>
+
+        <!-- Expert Team Section -->
+        <div class="section">
+            <div class="section-text-container">
+                <h2 class="section-title-text">Expert Team</h2>
+                <p class="section-description">Our expert team of designers is dedicated to bringing your vision to life. We work closely with you to understand your needs and deliver a personalized design that fits your style.</p>
+            </div>
+            <div class="section-image">
+                <img src="assets/images/rui2.jpg" alt="Design Image 2">
+            </div>
+        </div>
+
+        <!-- High-Quality Materials Section -->
+        <div class="section">
+            <div class="section-text-container">
+                <h2 class="section-title-text">High-Quality Materials</h2>
+                <p class="section-description">We use only the best materials to ensure durability and style. From furniture to accessories, everything is carefully selected to provide the highest quality at the best prices.</p>
+            </div>
+            <div class="section-image">
+                <img src="assets/images/rui3.jpg" alt="Design Image 3">
+            </div>
+        </div>
+    </div>
+    <!--BENEFIT -->
+
+    <!-- OUR TEAM -->
+    <div class="container section-title" id="ourProject">
+        <h2>Our Team</h2>
+        <h1>Meet Our Highly Professional Team</h1>
+    </div>
+    <div class="container team-section my-5" id="ourTeam">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="assets/images/team-1.png" alt="Team Member 1" class="card-img-top" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Adhi Purnawan</h5>
+                        <p class="card-text">Software Engineer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="assets/images/team-3.jpg" alt="Team Member 2" class="card-img-top" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Erdy Erisa</h5>
+                        <p class="card-text">Project Manager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="assets/images/team-2.png" alt="Team Member 3" class="card-img-top" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Carl Aris</h5>
+                        <p class="card-text">Web Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- OUR TEAM -->
+
+    <!-- CONTACT US -->
+    <div class="container contact-section" id="contact">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h1>Get in touchs</h1>
+                <p>Select layout follower boolean editor flows. Scrolling variant move font group variant layout device share.</p>     
+
+                <?php if (isset($_SESSION['success_message'])): ?>
+                    <script>
+                        setTimeout(function() {
+                            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+                        }, 10);
+                    </script>
+                    <div class="alert alert-success">
+                        <?php echo $_SESSION['success_message']; ?>
+                    </div>
+                    <?php unset($_SESSION['success_message']); ?>
+                <?php elseif (isset($_SESSION['error_message'])): ?>
+                    <div class="alert alert-danger">
+                        <?php echo $_SESSION['error_message']; ?>
+                    </div>
+                    <?php unset($_SESSION['error_message']); ?>
+                <?php endif; ?>
+
+
+                <form action="submit.php" method="post" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone" pattern="[0-9]+" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Type your message here..." rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <iframe class="google-location"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.024853074431!2d100.24585701531467!3d-0.20932389999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df6e9f3482b2775%3A0xf7d43d68ef238014!2sJl.%20Sultan%20Agung%2C%20Denpasar%2C%20Bali!5e0!3m2!1sen!2sid!4v1636499501687!5m2!1sen!2sid"
+                    width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- CONTACT US -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <!-- Left side of the footer -->
+             <div class="container">
+                 <div class="row">
+                     <div class="col-lg-4 col-md-4 col-sm-12 footer-left">
+                         <h4>Interior Design Consultancy</h4>
+                         <p>Bringing sensitivity to the design of top restaurants, hotels, and more.</p>
+                     </div>
+         
+                     <!-- Center section of the footer -->
+                     <div class="col-lg-4 col-md-4 col-sm-12  footer-center">
+                         <h4>Useful Links</h4>
+                         <ul>
+                             <li><a href="#aboutUs">About Us</a></li>
+                             <li><a href="#ourService">Our Service</a></li>
+                             <li><a href="#ourProject">Our Project</a></li>
+                             <li><a href="#ourTeam">Our Team</a></li>
+                             <li><a href="#benefit">Benefit</a></li>
+                         </ul>
+                     </div>
+         
+                     <!-- Right section of the footer -->
+                     <div class="col-lg-4 col-md-4 col-sm-12 footer-right">
+                         <h4>Contact Us</h4>
+                         <div class="contact-list">
+                            <i class="bi bi-telephone contact-icon"></i>
+                            <div class="contact-text">
+                                <h3>Phone</h3>
+                                <p>+888 (123) 869523</p>
+                            </div>
+                         </div>
+                         <div class="contact-list">
+                            <i class="bi bi-envelope"></i>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p>cvpengarep@gmail.com</p>
+                            </div>
+                         </div>
+                         <div class="contact-list">
+                            <i class="bi bi-geo-alt"></i>
+                            <div class="contact-text">
+                                <h3>Location</h3>
+                                <p>Bali Indonesia</p>
+                            </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-container bottom">
+                <div class="footer-bottom-left">
+                    <p>Copyright ©2024 by CV Pengarep. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER -->
 
     <!-- JS BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
